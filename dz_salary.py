@@ -1,5 +1,5 @@
 def total_salary(path):
-    with open('salary.txt', 'r', encoding='utf-8') as sal:
+    with open(path, 'r', encoding='utf-8') as sal:
         salaries = []
         for line in sal:
             path = line.split(',')
@@ -17,8 +17,7 @@ def total_salary(path):
         total_salary = sum(salaries)
         average_salary = total_salary / len(salaries)
 
-        return f"The total amount of salary: {
-            total_salary}, Average salary: {average_salary}"
+        return total_salary, average_salary
     else:
         return 'No file'
 
