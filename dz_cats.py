@@ -4,7 +4,7 @@ import pathlib
 def get_cats_info(path):
     cats_info = []
 
-    with open('cats.txt', 'r') as cat:
+    with open(path, 'r') as cat:
 
         for line in cat:
             line = line.strip()
@@ -23,4 +23,4 @@ def get_cats_info(path):
     return cats_info
 
 
-print(get_cats_info('D:\Projects\vscode-basics\cats.txt'))
+print(get_cats_info('cats.txt'))
