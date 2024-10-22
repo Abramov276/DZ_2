@@ -8,7 +8,7 @@ def total_salary(path):
                 name, salary = path
 
                 try:
-                    salaries.append(int(salary.strip()))
+                    salaries.append(float(salary.strip()))
 
                 except ValueError:
                     print(f"Invalid format for {name.strip()}")
